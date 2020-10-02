@@ -1,0 +1,613 @@
+::selection
+    background-color: #f9a828 !important
+    opacity: 0.5 !important
+    color: #ffffff !important
+
+::-webkit-scrollbar
+    width: 12px !important
+
+::-webkit-scrollbar-track
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3) !important
+    background-color: #212121 !important
+
+::-webkit-scrollbar-thumb
+    -webkit-box-shadow: inset 0 0 6px !important
+    color: #f9a828 !important
+    background-color: #f9a828 !important
+    
+html, body
+    scroll-behavior: smooth !important
+    overflow-x: hidden
+    
+#dz-section1
+    height: 100vh
+    width: 100vw
+    .dz-section1
+        &__navbar
+            &-nav
+                &_list
+                    &-link
+                        margin-right: 80px
+                        &:last-child
+                            margin-right: 0
+                        &_item
+                            font-family: "Monsterrat", sans-serif
+                            font-size: 18px
+                            font-weight: 400
+                            transition: .5s
+                            text-transform: capitalize
+                            color: #ffffff
+                            justify-content: flex-start !important
+                            &:hover
+                                color: #f9a828 !important
+                            &::before
+                                content: ""
+                                width: 0px
+                                border-bottom: solid 2px #f9a828
+                                transition: .5s
+                                position: absolute
+                                bottom: 25px
+                            &:hover::before
+                                width: 35px
+            &-mobile
+                display: none
+        &__title
+            display: flex
+            flex-direction: column
+            justify-content: center
+            align-items: center
+            height: 80vh
+            p
+                color: #f9a828
+                font-family: "Montserrat", sans-serif
+                font-size: 22px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 5px
+                margin-bottom: 0
+            h1
+                color: #f2f2f2
+                font-family: "Montserrat", sans-serif
+                font-size: 50px
+                font-weight: 400
+                margin-top: 10px
+        &__subscribe
+            &-left
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                position: absolute
+                left: 20px
+                bottom: 20px
+                &_facebook
+                    &-svg
+                        color: #ffffff
+                        margin-top: 15px
+                        font-size: 30px
+                        transition: .5s
+                        &:hover
+                            color: #3b5998
+                &_vk
+                    &-svg
+                        color: #ffffff
+                        margin-top: 15px
+                        font-size: 30px
+                        transition: .5s
+                        &:hover
+                            color: #597da3
+            &-right
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                position: absolute
+                right: 20px
+                bottom: 20px
+                &_whatsapp
+                    &-svg
+                        color: #ffffff
+                        margin-top: 15px
+                        font-size: 30px
+                        transition: .5s
+                        &:hover
+                            color: #25D366
+                &_telegram
+                    &-svg
+                        color: #ffffff
+                        margin-top: 15px
+                        font-size: 30px
+                        transition: .5s
+                        &:hover
+                            color: #0088cc
+
+#dz-section2
+    padding-bottom: 80px
+    background-color: #111111
+    .dz-section2
+        &__title
+            text-align: center
+            margin-bottom: 80px
+            h1
+                text-transform: uppercase
+                font-family: "Montserrat", sans-serif
+                color: #f9a828
+                font-size: 20px
+                font-weight: 700
+                letter-spacing: 5px
+        &__mobile
+            display: none
+        &__content
+            &-avatar
+                text-align: center
+                img
+                    height: 500px
+                    width: 400px
+                    border-radius: 50px
+            &-description
+                p
+                    font-family: "Bebas-Neue", sans-serif
+                    font-size: 30px
+                    color: #fff
+                    opacity: 0.8
+                    margin-top: 100px
+                    .library
+                        font-family: "Bebas-Neue", sans-serif
+                        font-size: 30px
+                        color: #fff
+                        text-decoration: underline
+                        transition: .5s
+                        &:hover
+                            color: #f9a828
+                &_html
+                    h1
+                        text-transform: uppercase
+                        font-family: "Montserrat", sans-serif
+                        color: #fff
+                        font-size: 20px
+                        margin-bottom: 10px
+                    &-progress
+                        margin-top: 0
+                        width: 75%
+                        &::-moz-progress-bar
+                            background-color: #f16529
+                        &::-webkit-progress-value
+                            background-color: #f16529
+                &_css
+                    h1
+                        text-transform: uppercase
+                        font-family: "Montserrat", sans-serif
+                        color: #fff
+                        font-size: 20px
+                        margin-bottom: 10px
+                    &-progress
+                        margin-top: 0
+                        width: 70%
+                        &::-moz-progress-bar
+                            background-color: #409ad6
+                        &::-webkit-progress-value
+                            background-color: #409ad6
+                &_js
+                    h1
+                        text-transform: uppercase
+                        font-family: "Montserrat", sans-serif
+                        color: #fff
+                        font-size: 20px
+                        margin-bottom: 10px
+                    &-progress
+                        margin-top: 0
+                        width: 40%
+                        &::-moz-progress-bar
+                            background-color: #f7e018
+                        &::-webkit-progress-value
+                            background-color: #f7e018
+                &_php
+                    h1
+                        text-transform: uppercase
+                        font-family: "Montserrat", sans-serif
+                        color: #fff
+                        font-size: 20px
+                        margin-bottom: 10px
+                    &-progress
+                        margin-top: 0
+                        width: 10%
+                        &::-moz-progress-bar
+                            background-color: #787cb4
+                        &::-webkit-progress-value
+                            background-color: #787cb4
+
+#dz-section3
+    position: relative
+    padding-top: 80px
+    padding-bottom: 80px
+    text-align: center
+    &::before
+        background-image: url("../img/Section-3/bg-i.jpg")
+        background-repeat: no-repeat
+        background-size: cover
+        background-blend-mode: overlay
+        background-color: rgba(0, 0, 0, 0.3)
+        content: ""
+        height: 100%
+        width: 100%
+        will-change: transform
+        left: 0
+        top: 0
+        z-index: -10
+        position: fixed
+    .dz-section3
+        &__title
+            h2
+                color: #f9a828
+                font-family: "Montserrat", sans-serif
+                font-size: 20px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 5px
+                margin-bottom: 10px
+            h1
+                color: #ffffff
+                font-family: "Montserrat", sans-serif
+                font-size: 50px
+                margin-top: 0
+            p
+                opacity: 0.4
+                color: #f2f2f2
+                font-family: "Montserrat", sans-serif
+                font-size: 20px
+        &__content
+            &-work
+                &_creatives
+                    background-image: url(../img/Section-3/creatives.jpg)
+                    background-repeat: no-repeat
+                    background-size: cover
+                    height: 200px
+                    transition: .5s
+                    margin-bottom: 50px
+                    &:hover
+                        -webkit-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        -moz-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                &_topSchool
+                    background-image: url(../img/Section-3/top-school.jpg)
+                    background-repeat: no-repeat
+                    background-size: cover
+                    height: 200px
+                    transition: .5s
+                    margin-bottom: 50px
+                    &:hover
+                        -webkit-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        -moz-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                &_servicePage
+                    background-image: url(../img/Section-3/service-page.jpg)
+                    background-repeat: no-repeat
+                    background-size: cover
+                    height: 200px
+                    transition: .5s
+                    margin-bottom: 50px
+                    &:hover
+                        -webkit-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        -moz-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                &_perchu
+                    background-image: url(../img/Section-3/perchu.jpg)
+                    background-repeat: no-repeat
+                    background-size: cover
+                    height: 200px
+                    transition: .5s
+                    margin-bottom: 50px
+                    &:hover
+                        -webkit-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        -moz-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                &_coffee
+                    background-image: url(../img/Section-3/coffee.jpg)
+                    background-repeat: no-repeat
+                    background-size: cover
+                    height: 200px
+                    transition: .5s
+                    margin-bottom: 50px
+                    &:hover
+                        -webkit-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        -moz-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                &_loseWeight
+                    background-image: url(../img/Section-3/lose-weight.jpg)
+                    background-repeat: no-repeat
+                    background-size: cover
+                    height: 200px
+                    transition: .5s
+                    &:hover
+                        -webkit-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        -moz-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                &_dublinApps
+                    background-image: url(../img/Section-3/dublin-apps.jpg)
+                    background-repeat: no-repeat
+                    background-size: cover
+                    height: 200px
+                    transition: .5s
+                    &:hover
+                        -webkit-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        -moz-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                &_kinomonster
+                    background-image: url(../img/Section-3/kinomonster.jpg)
+                    background-repeat: no-repeat
+                    background-size: cover
+                    height: 200px
+                    transition: .5s
+                    &:hover
+                        -webkit-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        -moz-box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+                        box-shadow: 20px 20px 0px 0px rgba(249,169,40,1)
+
+#dz-section4
+    background-image: url("../img/Section-4/bg-i.jpg")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    background-blend-mode: overlay
+    background-color: rgba(0, 0, 0, 0.3)
+    padding-top: 100px
+    padding-bottom: 100px
+    .dz-section4
+        &__title
+            text-align: center
+            margin-bottom: 50px
+            h2
+                color: #f9a828
+                font-family: "Montserrat", sans-serif
+                font-size: 20px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 5px
+                margin-bottom: 10px
+            h1
+                margin-top: 0
+                color: #ffffff
+                font-family: "Libre Baskerville", sans-serif
+                font-size: 48px
+            p
+                opacity: 0.4
+                color: #f2f2f2
+                font-family: "Montserrat"
+                font-size: 20px
+        &__mobile
+            display: none
+        &__content
+            &-message
+                &_form
+                    h2
+                        color: #ffffff
+                        font-family: "Montserrat", sans-serif
+                        font-size: 20px
+                        font-weight: 400
+                        letter-spacing: 2.8px
+                        text-transform: uppercase
+                        margin-bottom: 50px
+                    &-feedback
+                        &_block
+                            &-input
+                                &_first
+                                    input
+                                        width: 90%
+                                        height: 20px
+                                        background-color: rgba(255, 255, 255, 0.1)
+                                        padding: 15px
+                                        color: #f9a828
+                                        transition: .5s
+                                        border: 1px solid transparent
+                                        font-family: "Montserrat", sans-serif
+                                        font-size: 14px
+                                        font-weight: 400
+                                        &::-webkit-input-placeholder
+                                            color: #f9a828
+                                            font-family: "Montserrat", sans-serif
+                                            font-size: 14px
+                                            font-weight: 400
+                                        &::-moz-placeholder
+                                            color: #f9a828
+                                            font-family: "Montserrat", sans-serif
+                                            font-size: 14px
+                                            font-weight: 400
+                                        &:focus
+                                            border: solid 1px #f9a828
+                                            border-top-right-radius: 15px
+                                            border-bottom-left-radius: 15px
+                                            outline: 0
+                                &_second
+                                    input
+                                        width: 79%
+                                        height: 20px
+                                        background-color: rgba(255, 255, 255, 0.1)
+                                        padding: 15px
+                                        color: #f9a828
+                                        transition: .5s
+                                        border: 1px solid transparent
+                                        font-family: "Montserrat", sans-serif
+                                        font-size: 14px
+                                        font-weight: 400
+                                        &::-webkit-input-placeholder
+                                            color: #f9a828
+                                            font-family: "Montserrat", sans-serif
+                                            font-size: 14px
+                                            font-weight: 400
+                                        &::-moz-placeholder
+                                            color: #f9a828
+                                            font-family: "Montserrat", sans-serif
+                                            font-size: 14px
+                                            font-weight: 400
+                                        &:focus
+                                            border: solid 1px #f9a828
+                                            border-top-right-radius: 15px
+                                            border-bottom-left-radius: 15px
+                                            outline: 0
+                                &_third
+                                    textarea
+                                        width: 91%
+                                        height: 216px
+                                        padding: 15px
+                                        background-color: rgba(255, 255, 255, 0.1)
+                                        transition: .5s
+                                        color: #f9a828
+                                        border: 1px solid transparent
+                                        font-family: "Montserrat", sans-serif
+                                        font-size: 14px
+                                        font-weight: 400
+                                        &::-webkit-input-placeholder
+                                            color: #f9a828
+                                            font-family: "Montserrat", sans-serif
+                                            font-size: 14px
+                                            font-weight: 400
+                                        &::-moz-placeholder
+                                            color: #f9a828
+                                            font-family: "Montserrat", sans-serif
+                                            font-size: 14px
+                                            font-weight: 400
+                                        &:focus
+                                            border: solid 1px #f9a828
+                                            border-top-right-radius: 15px
+                                            border-bottom-left-radius: 15px
+                                            outline: 0
+                                &_fourth
+                                    button
+                                        width: 96.5%
+                                        background-color: #f9a828 
+                                        border: 0 
+                                        padding: 20px
+                                        border: 1px solid transparent
+                                        transition: .5s
+                                        color: #000000
+                                        font-family: "Montserrat", sans-serif
+                                        letter-spacing: 2px
+                                        font-size: 15px
+                                        font-weight: 700
+                                        text-transform: uppercase
+                                        &:hover
+                                            border: solid 1px #f9a828
+                                            color: #f9a828
+                                            border-radius: 15px
+                                            background-color: transparent
+                &_contact
+                    h2
+                        color: #ffffff
+                        font-family: "Montserrat", sans-serif
+                        font-size: 20px
+                        font-weight: 400
+                        letter-spacing: 2.8px
+                        text-transform: uppercase
+                        margin-bottom: 50px
+                    &-found
+                        h2
+                            color: #f9a828
+                            font-family: "Montserrat", sans-serif
+                            font-size: 16px
+                            font-weight: 700
+                            letter-spacing: 2.8px
+                            text-transform: uppercase
+                            margin-bottom: 0
+                        p
+                            color: #ffffff
+                            font-family: "Libre Baskerville", sans-serif
+                            font-size: 16px
+                            font-weight: 400
+                            margin-bottom: 50px
+                    &-phone
+                        h2
+                            color: #f9a828
+                            font-family: "Montserrat", sans-serif
+                            font-size: 16px
+                            font-weight: 700
+                            letter-spacing: 2.8px
+                            text-transform: uppercase
+                            margin-bottom: 20px
+                        a
+                            color: #ffffff
+                            font-family: "Libre Baskerville", sans-serif
+                            font-size: 16px
+                            font-weight: 400
+                    &-mail
+                        h2
+                            color: #f9a828
+                            font-family: "Montserrat", sans-serif
+                            font-size: 16px
+                            font-weight: 700
+                            letter-spacing: 2.8px
+                            text-transform: uppercase
+                            margin-top: 50px
+                            margin-bottom: 0
+                        p
+                            color: #ffffff
+                            font-family: "Libre Baskerville", sans-serif
+                            font-size: 16px
+                            font-weight: 400
+                            margin-top: 20px
+        
+#dz-section5
+    background-color: #111
+    text-align: center
+    padding-top: 100px
+    padding-bottom: 50px
+    .dz-section5
+        &__title
+            margin-bottom: 50px
+            h1
+                color: #ffffff
+                font-family: "Montserrat", sans-serif
+                font-size: 20px
+                font-weight: 700
+                text-transform: uppercase
+                letter-spacing: 1.4px
+                color: #f9a828
+        &__content
+            margin-bottom: 50px
+            &-block
+                text-align: center
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                a
+                    opacity: 0.4
+                    color: #ffffff
+                    font-family: "Libre Baskerville", sans-serif
+                    font-size: 15px
+                    font-weight: 400
+                    line-height: 30px
+                    text-decoration: underline
+                    transition: .5s
+                    &:hover
+                        color: #f9a828
+                        opacity: 1
+        &__rights
+            p
+                color: #ffffff
+                font-family: "Montserrat", sans-serif
+                font-size: 15px
+                font-weight: 400
+                line-height: 30px
+                text-align: left
+                text-align: center
+                opacity: 0.2
+                span
+                    color: #f9a828
+                    text-decoration: underline
+                    margin-right: 10px
+
+#go-top
+    z-index: 30000
+    position: fixed
+    bottom: 20px
+    right: 20px
+    text-align: center
+    cursor: pointer
+    display: none
+    width: 80px
+    color: #f9a828
+    line-height: 30px
+    border-radius: 5px
+    transition: .5s
+    &:hover
+        color: #fff
